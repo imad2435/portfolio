@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Custom Styles for CMDK Command Palette */
+[cmdk-dialog-overlay] {
+  background: rgba(0 0 0 / .8);
+  position: fixed;
+  inset: 0;
+}
+/* Custom Styles for CMDK Dropdown Search */
+[cmdk-root] [cmdk-list] {
+  position: absolute;
+  top: 110%; /* Position it just below the input field */
+  width: 100%;
+  background: #2A2A3A; /* apex-card */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  padding: 8px;
+  max-height: 300px;
+  overflow-y: auto;
+  z-index: 60; /* Make sure it appears above other content but below the navbar if needed */
+}
+[cmdk-item] {
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+  color: #9E9E9E; /* apex-gray */
+}
+[cmdk-item][aria-selected="true"] {
+  background: #6C63FF; /* apex-purple */
+  color: #FFFFFF;
+}
+[cmdk-group-heading] {
+  padding: 8px 12px;
+  font-size: 0.75rem;
+  color: #9E9E9E; /* apex-gray */
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+}

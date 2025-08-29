@@ -1,0 +1,25 @@
+
+---
+
+## 🔹 `.gitignore` (for root)
+```gitignore
+# Node
+node_modules/
+.env
+npm-debug.log*
+yarn-error.log*
+
+# React build
+client/build/
+client/node_modules/
+client/.env*
+
+# Server
+server/node_modules/
+server/.env
+
+# OS / IDE
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
